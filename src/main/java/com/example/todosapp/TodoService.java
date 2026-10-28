@@ -10,10 +10,7 @@ import java.util.List;
 public class TodoService {
     private static List<Todo> todoList = new ArrayList<>();
 
-    static {
-        todoList.add();
-    }
-
     public List<Todo> findByUsername(String s) {
+        return todoList.stream().filter(todo -> todo.getUserName().equalsIgnoreCase(s)).toList();
     }
 }

@@ -24,9 +24,7 @@ public class TodoController {
     public String listallTodos(ModelMap map){
        List<Todo> todoLists=  todoService.findByUsername("");
        map.put("todos",todoLists);
-
-
-
+       return "listTodos";
     }
 
 }

@@ -32,7 +32,7 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${todoList}" var="todo">
+    <c:forEach items="${todos}" var="todo">
         <tr>
             <td>
                 ${todo.id}
@@ -41,7 +41,7 @@
                     ${todo.description}
             </td>
             <td>
-                ${todo.localdate}
+                ${todo.localDate}
 
             </td>
             <td>
